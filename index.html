@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Leave Management System</h1>
+        <p>Employee Leave Application Portal</p>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Apply for Leave</h2>
+
+            <form id="leaveForm">
+                <label for="name">Employee Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+
+                <label for="leaveType">Leave Type</label>
+                <select id="leaveType" name="leaveType" required>
+                    <option value="">Select Leave Type</option>
+                    <option value="Casual Leave">Casual Leave</option>
+                    <option value="Medical Leave">Medical Leave</option>
+                    <option value="Earned Leave">Earned Leave</option>
+                </select>
+
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate" name="startDate" required>
+
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate" name="endDate" required>
+
+                <label for="reason">Reason for Leave</label>
+                <textarea id="reason" name="reason"
+                          placeholder="Enter your reason"
+                          required></textarea>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </section>
+
+        <section class="leave-container">
+            <h2>Leave Applications</h2>
+            <div id="leaveList">
+                <p>Loading leave applications...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Leave Management System | FSWD Lab Experiment</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
