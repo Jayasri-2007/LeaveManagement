@@ -1,0 +1,171 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef5ff;
+    color: #26364a;
+    min-height: 100vh;
+}
+
+#root {
+    min-height: 100vh;
+    padding: 25px 15px;
+}
+
+h1 {
+    text-align: center;
+    color: #174ea6;
+    font-size: 30px;
+    margin: 15px 0 25px;
+}
+
+h2 {
+    text-align: center;
+    color: #2164b5;
+    font-size: 25px;
+    margin: 25px 0;
+}
+
+nav {
+    background: white;
+    max-width: 950px;
+    margin: 0 auto 35px;
+    padding: 18px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(30, 90, 160, 0.12);
+}
+
+nav a {
+    text-decoration: none;
+    color: #2164b5;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #0d8bdc;
+}
+
+form {
+    width: 400px;
+    max-width: 95%;
+    margin: 25px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(30, 90, 160, 0.12);
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #b9d2f0;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #2164b5;
+}
+
+button {
+    padding: 11px 20px;
+    background: #2164b5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background: #174ea6;
+}
+
+form button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.dashboard-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.dashboard-card {
+    width: 280px;
+    min-height: 150px;
+    padding: 25px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(30, 90, 160, 0.12);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.dashboard-card h3 {
+    color: #2164b5;
+    font-size: 19px;
+}
+
+.dashboard-card p {
+    color: #174ea6;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+select {
+    padding: 10px 15px;
+    border: 1px solid #b9d2f0;
+    border-radius: 8px;
+    background: white;
+    font-size: 15px;
+}
+
+p {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .dashboard-card {
+        width: 100%;
+    }
+
+    form {
+        padding: 22px;
+    }
+}
